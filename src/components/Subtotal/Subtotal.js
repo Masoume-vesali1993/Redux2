@@ -1,5 +1,5 @@
-import React, { Component } from './node_modules/react';
-import {Row, Col} from './node_modules/react-bootstrap';
+import React, { Component } from 'react';
+import {Row, Col} from 'react-bootstrap';
 
 export default class SubTotal extends Component {
     render () {
