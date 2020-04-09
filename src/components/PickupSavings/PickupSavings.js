@@ -22,7 +22,8 @@ export default class PickupSavings extends Component {
         );
         
         return(
-            <Row className="show-grid row">
+            <Row className="show-grid">
+                
                 <Col md={6}>
                     <OverlayTrigger placement="bottom">
                         <div style={styles.PickupSavings}>pickup saving</div>
