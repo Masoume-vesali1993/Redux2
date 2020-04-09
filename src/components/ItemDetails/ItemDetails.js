@@ -17,8 +17,10 @@ export default class ItemDetails extends Component {
                 bsStyle="link"
                 onClick={() => this.setState({open: !this.state.open })}
                 >
+
                     { this.state.open === false ? `See` : `Hide`} item details
                     { this.state.open === false ? `+` : `-`} 
+                    
                 </Button>
             </div>
         )
