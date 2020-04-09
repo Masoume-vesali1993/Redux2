@@ -15,7 +15,7 @@ var styles = {
 
 export default class PickupSavings extends Component {
     render() {
-        const Tooltip = (
+        const tooltip = (
             <Tooltip id="Tooltip">
                 <p>Picking up your order in the store</p>
             </Tooltip>
