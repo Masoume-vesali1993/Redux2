@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import { Row, Col, Tooltip, OverlayTrigger } from 'react-bootstrap';
 
 var styles = {
-    PickupSavings: {
-    textDecoration: 'none'
+    pickupSavings: {
+    textDecoration: 'underline'
     },
     totalSaving:{
         color:'red', 
-        fontWeight: 8000
+        fontWeight: 800
     }
 };
 
