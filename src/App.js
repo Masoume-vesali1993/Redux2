@@ -33,6 +33,7 @@ render() {
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
           <hr/>
           <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
+          <ItemDetails />
       </Row>
     </div>
      );
