@@ -33,6 +33,25 @@ export default class ItemDetails extends Component {
                                     src="https://i5.walmartimages.com/asr/013f4de0-db33-441b-983b-4c29aed6759f_1.1b0b38f8b97d204b442ea95bd922d0e0.jpeg?odnWidth=undefined&odnHeight=undefined&odnBg=ffffff"/
                                     >
                             </Media>
+                            <Media.Body>
+                                <p>Essentials by open</p>
+                                <Row className="show-grid">
+                                    <Col md={6}>
+                                        
+                                        <strong> 
+                                            {`$${this.props.prie}`}
+                                        </strong>
+
+                                        <br />
+
+                                        <strong className="price-strike"> 
+                                        {`$${this.props.prie}`} 
+                                        </strong>
+
+                                    </Col>
+                                    <Col md={6}> Qity:1 </Col>
+                                </Row>
+                            </Media.Body>
                         </Card>
                     </div>
                 </Collapse>
