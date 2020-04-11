@@ -41,7 +41,7 @@ import {
                                     <Col md={12}>
                                         <Form>
                                             <FormGroup controlId="formInLineName">
-                                                <ControlLabel>Promo Code</ControlLabel>
+                                                {/* <ControlLabel>Promo Code</ControlLabel> */}
                                                 <FormControl 
                                                 type="text"
                                                 Placeholder="Enter promo code"
