@@ -36,6 +36,7 @@ render() {
           <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
           <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
           <hr />
+          <PromoCode />
       </Row>
     </div>
      );

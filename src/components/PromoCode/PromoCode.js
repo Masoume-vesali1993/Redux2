@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     Button,
     Collapse,
-    Well,
+    Card,
     Form,
     Row,
     Col,
@@ -33,6 +33,38 @@ import {
                     promo code
                     {this.state.open === false ? ` + ` : ` - `}
                     </Button>
+
+                    <Collapse in={this.state.open}> 
+                        <div>
+                            <Card>
+                                <Row className="show-grid">
+                                    <Col md={12}>
+                                        <Form>
+                                            <FormGroup controlId="formInLineName">
+                                                <ControlLabel>Promo Code</ControlLabel>
+                                                <FormControl 
+                                                type="text"
+                                                Placeholder="Enter promo code"
+                                                value={this.props.promoCode}
+                                                onChange={this.handleChange}
+                                                />
+                                            </FormGroup>
+
+                                            <Button
+                                                block
+                                                bsStyle="success"
+                                                className="btn-round"
+                                                disabled={this.props.isDisabled}
+                                                onClick={this.props.giveDiscount}
+                                            >
+                                                Apply
+                                            </Button>
+                                        </Form>
+                                    </Col>
+                                </Row>
+                            </Card>
+                        </div>
+                    </Collapse>
                 </div>
             )
         }
