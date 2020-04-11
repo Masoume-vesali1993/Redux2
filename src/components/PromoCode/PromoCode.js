@@ -16,7 +16,26 @@ import {
             super(props);
 
             this.state = {
-                
-            }
+                open: false,
+                value: ''
+            };
+        }
+
+        render() {
+            return(
+                <div>
+                    <Button
+                    className="promo-code-button"
+                    bsStyle="Link"
+                    onClick={() => this.setState({open: !this.state.open})}
+                    >
+                    {this.state.open === false ? `Apply` : `Hide`}
+                    promo code
+                    {this.state.open === false ? ` + ` : ` - `}
+                    </Button>
+                </div>
+            )
         }
     }
+
+    export default PromoCodeDiscount;

@@ -6,6 +6,7 @@ import PickupSavings from './components/PickupSavings/PickupSavings';
 import TaxesFees from './components/TaxesFees/TaxesFees';
 import EstimatedTotal from './components/EstimatedTotal/EstimatedTotal';
 import ItemDetails from './components/ItemDetails/ItemDetails';
+import PromoCode from './components/PromoCode/PromoCode';
 import './App.css';
 
 
