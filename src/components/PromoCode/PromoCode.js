@@ -20,10 +20,13 @@ import {
             super(props);
 
             this.state = {
-                open: false,
-                value: ''
+                open: false
             };
         }
+
+        handleChange = e => {
+            this.props.handleChange(e);
+        };
 
         render() {
             return(
