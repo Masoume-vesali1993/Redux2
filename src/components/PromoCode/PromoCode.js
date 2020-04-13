@@ -77,4 +77,4 @@ import {
         promoCode: state.promoCode.value
     });
 
-    export default PromoCodeDiscount;
+    export default connect(mapStateToProps, {handleChange }) (PromoCodeDiscount);
