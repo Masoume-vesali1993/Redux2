@@ -61,6 +61,8 @@ render() {
     }
    }
   
-const mapS
+const mapStateToPaops = state => ({
+  PromoCode: state.promoCode.value
+})
 
-export default App;
+export default connect(mapStateToPaops, { handleChange })(App);
