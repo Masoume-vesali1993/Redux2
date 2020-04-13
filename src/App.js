@@ -36,8 +36,23 @@ componentDidMount = () => {
         estimatedTotal: this.state.total + this.state.PickupSavings + this.state.taxes
       })
     }
-  )
-}
+  );
+};
+
+giveDiscountHander = () => {
+  if (this.props.promoCode === 'DISCOUNT') {
+    this.setState(
+      {
+        estimatedTotal: this.state.estimatedTotal * 0.9
+      },
+      function() {
+        this.setState({
+          disablePromoButton : true
+        });
+      }
+    );
+  }
+};
 
 render() {
   return (
