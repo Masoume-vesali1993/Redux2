@@ -10,7 +10,11 @@ import {
     ControLLabel,
     FormControl
     } from 'react-bootstrap';
-// add part redux and global estate manager 
+    import { connect } from 'react-redux';
+    import { handleChange } from '../../action/promoCodeActions';
+
+
+    // add part redux and global estate manager 
     class PromoCodeDiscount extends Component {
         constructor(props){
             super(props);
@@ -69,5 +73,8 @@ import {
             )
         }
     }
+    const mapStateToProps = state => ({
+        promoCode: state.promoCode.value
+    });
 
     export default PromoCodeDiscount;
