@@ -7,7 +7,7 @@ import {
     Row,
     Col,
     FormGroup,
-    ControLLabel,
+    FormLabel,
     FormControl
     } from 'react-bootstrap';
     import { connect } from 'react-redux';
@@ -48,12 +48,12 @@ import {
                                     <Col md={12}>
                                         <Form>
                                             <FormGroup controlId="formInLineName">
-                                                {/* <ControlLabel>Promo Code</ControlLabel> */}
+                                                <FormLabel>Promo Code</FormLabel>
                                                 <FormControl 
-                                                type="text"
-                                                Placeholder="Enter promo code"
-                                                value={this.props.promoCode}
-                                                onChange={this.handleChange}
+                                                    type="text"
+                                                    Placeholder="Enter promo code"
+                                                    value={this.props.promoCode}
+                                                    onChange={this.handleChange}
                                                 />
                                             </FormGroup>
 
