@@ -39,7 +39,7 @@ componentDidMount = () => {
   );
 };
 
-giveDiscountHander = () => {
+giveDiscountHandler = () => {
   if (this.props.promoCode === 'DISCOUNT') {
     this.setState(
       {
@@ -58,7 +58,6 @@ render() {
   return (
     <div className="container">
       <Row className="purchase-card">
-         {/* toFixed به معنی مقدار 0بعد از اعشار هست */}
          <SubTotal price={this.state.total.toFixed(2)}/> 
           <PickupSavings price={this.state.PickupSavings} /> 
           <TaxesFees taxes={this.state.taxes.toFixed(2)} />
@@ -66,8 +65,8 @@ render() {
           <EstimatedTotal price={this.state.estimatedTotal.toFixed(2)} />
           <ItemDetails price={this.state.estimatedTotal.toFixed(2)} />
           <hr />
-          <PromoCode 
-          giveDiscount={ () => this.giveDiscountHandler() }
+          <PromoCode
+          giveDiscount={() => this.giveDiscountHandler ()}
           isDisabled={this.state.disablePromoButton}
           />
       </Row>
